@@ -1,5 +1,7 @@
-DROP TABLE IF EXISTS users;
+\c messagely
+
 DROP TABLE IF EXISTS messages;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
     username text PRIMARY KEY,

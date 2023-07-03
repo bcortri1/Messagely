@@ -42,8 +42,8 @@ app.use(function(err, req, res, next) {
   if (process.env.NODE_ENV != "test") console.error(err.stack);
 
   return res.json({
-    error: err,
-    message: err.message
+    error: {status:err.status,
+    message: err.message}
   });
 });
 
